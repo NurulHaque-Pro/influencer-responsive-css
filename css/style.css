@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    color: #3A3A3A;
+}
+
+.btn-primary {
+    padding: 10px 24px;
+    color: white;
+    background-color: #E02C6D;
+    border-style: none;
+}
+
+.btn-primary i {
+    color: white;
+    margin-left: 3px;
+}
+
+/*-------------- Header Banner Sections Styles ---------*/
+
+.header-banner-container {
+    display: flex;
+    padding: 50px 120px;
+    align-items: center;
+    gap: 130px;
+}
+
+.banner-title {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 8px;
+}
+
+.banner-description {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.banner-button {
+    border-radius: 40px;
+}
+
+.camera-section {
+    background: url('../img/Circle\ design.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.camera-section img {
+    width: 440px;
+    height: 415px;
+}
+
+
+/* -------------- Our Partner Sections Styles ---------------- */
+
+.our-partner-container {
+    width: 1110px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 35px 25px;
+    border-top: 1px solid #c0ccda52;
+    border-bottom: 1px solid #c0ccda52;
+}
+
+
+/* ------------Popular Collection Sections Styles ------------ */
+
+.popular-collection-container {
+    margin: 0px auto;
+    width: 1050px;
+    padding: 50px 80px;
+}
+
+.pupular-collection-title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 70px;
+}
+
+.pupular-products-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* Responsive Area */
+
+@media screen and (max-width: 576px) {
+    .header-banner-container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding:  ;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .camera-section{
+        width: 257px;
+        height: 257px;
+    }
+
+    .camera-section img{
+        width: 202px;
+        height: 190px;
+    }
+}
